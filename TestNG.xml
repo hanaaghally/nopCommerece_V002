@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="nopcommercesuite">
+<listeners>
+<listener class-name="com.nopCommerece.utilites.Reporting"/> 
+</listeners>
+	
+	 <test name="chrometest">
+	<parameter name="browser" value="chrome"/>
+		<classes>
+			 <class name="com.nopCommerce.testcases.LoginPage_TC001" /> 
+			  <!--   <class name="com.nopCommerce.testcases.LoginPage_TC002" /> 
+			 <class name="com.nopCommerce.testcases.TC_AddCustomerTest_003" />
+			<class name="com.nopCommerce.testcases.AddCustomer" />-->
+		</classes>
+	</test> 
+	
+<test name="firefoxtest">
+	<parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="com.nopCommerce.testcases.LoginPage_TC001" />
+		</classes>
+	</test> 
+	
+	
+<test name="ietest">
+	<parameter name="browser" value="ie"/>
+		<classes>
+			<class name="com.nopCommerce.testcases.LoginPage_TC001" />
+		</classes>
+	</test> 
+	
+	
+	
+</suite>
